@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    align-items: center;
+    background-image: linear-gradient(
+        to right,
+        #9abed9,
+        #E3DDEE
+    );
+}
+.cabeçalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.cabeçalho__menu{
+  display: inline-block;
+}
+
+.cabeçalho__menu__link{
+ font-family: 'Cormorant Unicase', serif;
+ color: #27374D;
+ font-weight: 400;
+ font-size: 1.2rem;
+ width: 100%;
+ text-align: center;
+ text-decoration: none;
+ margin: 50px;
+}
+
+.apresentacao{
+ padding: 2% 14%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap:82px;
+ text-align: center;
+}
+
+.apresentacao__conteudo{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 1.5rem;
+    color:#435B66;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 70px;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+.botao{
+    height: 50px;
+    width: 50%;
+    background-color: #83b2d6;
+    color: #27374D;
+    font-weight: bold;
+}
+
+.botao:hover{
+    cursor: pointer;
+}
+
+.apresentacao__conteudo__paragrafo{
+ font-family: 'Cormorant Unicase', serif;
+ font-size: 1.5rem;
+ color:#435B66;
+}
+
+.apresentaçao__imagem{
+    width:450px;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+.apresentacao__conteudo__lado__direito{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem__apresentacao__direita{
+    width: 50%;
+    align-items: center;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.rodape{
+    padding:10px;
+    background-color: #83b2d6;
+    color: #27374D;
+    text-align: center;
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media(max-width:760px){
+ .cabeçalho{
+  flex-direction: column;
+ }
+ main{
+  flex-direction: column-reverse;
+ }
+ form{
+  margin: 0 auto;
+  width: 100%;
+ }
+ input{
+  align-self: center;
+ }
+ 
+}
